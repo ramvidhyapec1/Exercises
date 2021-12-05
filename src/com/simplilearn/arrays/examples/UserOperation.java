@@ -18,7 +18,8 @@ public class UserOperation {
 		while(until) {
 			System.out.println(" :: Enter a userId :: ");			
 			int userId = input.nextInt();
-			findUser(userId);
+			//findUser(userId);
+			finduser1(userId);
 		}
 
 	}
@@ -41,5 +42,26 @@ public class UserOperation {
 	}
 
 	//find a user details with arrays
+	private static void finduser1(int userId) {
+		for (int i : userIds) {
+			if (i==userId) {
+				System.out.println("User is found with details");
+				System.out.println("The user Id : "+userIds[i]);
+				System.out.println("The user name : "+usernames[i]);
+				System.out.println("The user balance : "+balances[i]);
+				break;
+			}
+			else
+			{
+				System.out.println("User is not found with the given UserID "+userId);
+				System.out.println(" Please enter a valid user id");
+				break;
+			}
+			//break;
+					
+		}
+		
+	}
+	
 	
 }
