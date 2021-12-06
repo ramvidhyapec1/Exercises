@@ -40,14 +40,14 @@ public class EmployeeQueue {
 				//it is not thread safe
 				//iterate over a queue
 				for (String person :queueOfEmployees) {
-					System.out.println("Name :"+name);
+					System.out.println("Name :"+person.name);
 					System.out.println("Id :"+id);
 					System.out.println("Salary :"+salary);
 					System.out.println("Name :"+name);
 					System.out.println("Name :"+name);
 				}
 				System.out.println("---------------------------------");
-		*/
+		
 
 	}
 
